@@ -1,0 +1,39 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>krosoft-dev/Krosoft.Configs.Renovate"],
+  "description": "Renovate configuration for frontend projects.",
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "groupName": "TypeScript/Prettier/ESLint packages",
+      "matchPackagePatterns": [
+        "prettier",
+        "^@typescript-eslint/",
+        "^eslint",
+        "typescript",
+        "eslint",
+        "eslint-*"
+      ]
+    },
+
+    {
+      "groupName": "Date Libraries",
+      "matchPackageNames": ["date-fns", "date-fns-tz"]
+    },
+
+    {
+      "groupName": "Testing packages",
+      "matchPackagePatterns": [
+        "^@testing-library/",
+        "^vitest",
+        "^jest-",
+        "jsdom"
+      ]
+    },
+
+    {
+      "groupName": "Node.js type packages",
+      "matchPackagePatterns": ["^@types/node"]
+    }
+  ]
+}
