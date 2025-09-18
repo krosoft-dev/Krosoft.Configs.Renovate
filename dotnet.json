@@ -28,17 +28,14 @@
     },
     {
       "groupName": "test frameworks packages",
-      "matchPackagePatterns": [
-        "^xunit",
-        "^nunit",
-        "^mstest",
-        "^moq",
-        "^nfluent",
-        "^coverlet",
-        "^microsoft\\.test",
-        "^microsoft\\.testadapter",
-        "^microsoft\\.testplatform",
-        "^microsoft.*\\.testing"
+      "matchPackagePrefixes": ["xunit", "nunit", "NUnit", "MSTest"],
+      "matchPackageNames": [
+        "Microsoft.NET.Test.Sdk",
+        "NFluent",
+        "Moq",
+        "coverlet.collector",
+        "coverlet.msbuild",
+        "JetBrains.Annotations"
       ]
     }
   ]
