@@ -3,6 +3,7 @@
   "extends": ["github>krosoft-dev/Krosoft.Configs.Renovate"],
   "description": "Renovate configuration for frontend projects.",
   "rangeStrategy": "bump",
+  "postUpdateOptions": ["npmInstallTwice"],
   "packageRules": [
     {
       "groupName": "TypeScript/Prettier/ESLint packages",
