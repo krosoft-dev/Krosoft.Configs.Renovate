@@ -3,7 +3,11 @@
   "extends": ["github>krosoft-dev/Krosoft.Configs.Renovate"],
   "description": "Renovate configuration for frontend projects.",
   "rangeStrategy": "bump",
-  "postUpdateOptions": ["npmInstallTwice"],
+  "postUpdateOptions": ["npmDedupe"],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+
   "packageRules": [
     {
       "groupName": "TypeScript/Prettier/ESLint packages",
@@ -24,17 +28,23 @@
 
     {
       "groupName": "Testing packages",
-      "matchPackagePatterns": [
-        "^@testing-library/",
-        "^vitest",
-        "^jest-",
-        "jsdom"
-      ]
+      "matchPackagePatterns": ["^@testing-library/", "^jest-", "jsdom"]
     },
-
     {
       "groupName": "Node.js type packages",
       "matchPackagePatterns": ["^@types/node"]
+    },
+
+    {
+      "groupName": "vite packages",
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["@vitejs/**", "vite", "vite-**"]
+    },
+
+    {
+      "groupName": "vitest packages",
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["vitest", "vitest-**", "@vitest/**"]
     }
   ]
 }
