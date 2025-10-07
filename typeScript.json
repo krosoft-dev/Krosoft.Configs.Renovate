@@ -3,7 +3,7 @@
   "extends": ["github>krosoft-dev/Krosoft.Configs.Renovate"],
   "description": "Renovate configuration for frontend projects.",
   "rangeStrategy": "bump",
-  "postUpdateOptions": ["npmDedupe"],
+  "postUpdateOptions": ["npmInstallTwice"],
   "lockFileMaintenance": {
     "enabled": false
   },
