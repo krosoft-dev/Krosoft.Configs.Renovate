@@ -5,7 +5,7 @@
   "rangeStrategy": "bump",
   "postUpdateOptions": ["npmDedupe"],
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": false
   },
 
   "packageRules": [
