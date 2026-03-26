@@ -5,7 +5,7 @@
   "rangeStrategy": "update-lockfile",
   "postUpdateOptions": ["npmDedupe"],
   "lockFileMaintenance": {
-    "enabled": false
+    "enabled": true
   },
 
   "packageRules": [
