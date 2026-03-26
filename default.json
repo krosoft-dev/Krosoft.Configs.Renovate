@@ -3,6 +3,7 @@
   "extends": ["config:recommended", ":rebaseStalePrs"],
   "description": "Renovate configuration for all repositories.",
   "labels": ["renovate"],
+  "automerge": true,
   "packageRules": [
     {
       "groupName": "all non-major dependencies",
