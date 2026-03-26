@@ -2,8 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>krosoft-dev/Krosoft.Configs.Renovate"],
   "description": "Renovate configuration for frontend projects.",
-  "rangeStrategy": "bump",
-  "postUpdateOptions": ["npmInstallTwice"],
+  "rangeStrategy": "update-lockfile",
+  "postUpdateOptions": ["npmDedupe"],
   "lockFileMaintenance": {
     "enabled": false
   },
