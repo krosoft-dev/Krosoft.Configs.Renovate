@@ -4,6 +4,7 @@
   "description": "Renovate configuration for all repositories.",
   "labels": ["renovate"],
   "automerge": true,
+  "automergeType": "pr",
   "packageRules": [
     {
       "groupName": "all non-major dependencies",
