@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>krosoft-dev/Krosoft.Configs.Renovate:typeScript"],
+  "extends": ["github>krosoft-dev/krosoft-tooling-renovate:typeScript"],
   "description": "Renovate configuration for loveable projects.",
   "packageRules": [
     {

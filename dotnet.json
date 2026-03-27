@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>krosoft-dev/Krosoft.Configs.Renovate"],
+  "extends": ["github>krosoft-dev/krosoft-tooling-renovate"],
   "description": "Renovate configuration for .NET projects.",
   "packageRules": [
     {
