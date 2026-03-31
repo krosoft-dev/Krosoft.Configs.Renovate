@@ -10,6 +10,13 @@
 
   "packageRules": [
     {
+      "description": "Always update @krosoft/* packages to the latest version",
+      "groupName": "Krosoft packages",
+      "matchPackagePrefixes": ["@krosoft/"],
+      "rangeStrategy": "replace"
+    },
+
+    {
       "groupName": "TypeScript/Prettier/ESLint packages",
       "matchPackagePatterns": [
         "prettier",
