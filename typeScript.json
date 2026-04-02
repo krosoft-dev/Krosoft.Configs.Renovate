@@ -12,7 +12,7 @@
     {
       "description": "Always update @krosoft/* packages to the latest version",
       "groupName": "Krosoft packages",
-      "matchPackagePrefixes": ["@krosoft/"],
+      "matchPackageNames": ["@krosoft/**"],
       "rangeStrategy": "replace"
     },
 
