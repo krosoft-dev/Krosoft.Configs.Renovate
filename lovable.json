@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>krosoft-dev/krosoft-tooling-renovate:typeScript"],
-  "description": "Renovate configuration for loveable projects.",
+  "description": "Renovate configuration for lovable projects.",
   "packageRules": [
     {
       "groupName": "DnD Kit packages",
