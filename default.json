@@ -11,6 +11,12 @@
       "groupSlug": "all-minor-patch",
       "matchPackageNames": ["*"],
       "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "description": "Never propose prerelease versions (preview/rc/beta/alpha), even when a project is already on one",
+      "matchDatasources": ["nuget", "npm"],
+      "matchPackageNames": ["*"],
+      "allowedVersions": "!/-/"
     }
   ]
 }
